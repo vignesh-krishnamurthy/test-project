@@ -32,7 +32,6 @@ public class LoginPage {
 	    	names.sendKeys(name);
 	    	passwords.sendKeys(password);
 	    	submit.click();
-	    	System.out.println("Hello");
 }
 	    
 }

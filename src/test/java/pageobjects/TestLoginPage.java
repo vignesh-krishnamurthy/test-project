@@ -1,16 +1,13 @@
 package pageobjects;
+import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import test.component.BaseTest;
+public class TestLoginPage extends BaseTest {
 
-public class TestLoginPage {
-
-	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","/Users/vignesh/Downloads/chromedriver-mac-x64 2/chromedriver");
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("--remote-allow-origins=*");
-		WebDriver driver = new ChromeDriver(ops);
+	public static void main(String[] args) throws InterruptedException, IOException {
+		
+		BaseTest c= new BaseTest();
+		c.inializeDriver();
 		
 		driver.get("https://portal.cleantasker.com/login");
 		
